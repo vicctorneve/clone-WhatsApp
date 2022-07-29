@@ -1,0 +1,146 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: white;
+}
+body{
+   display: flex;
+   background-color: gray;
+   width: 100vw;
+   height: 100vh;
+}
+header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px;
+   background-color: #202C33;
+   height: 10vh;
+}
+.photo{
+   background-color: #6A7175;
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+}
+/* CSS Global*/
+aside{
+   border-right: 1px solid rgba(255, 255, 255, 0.363);
+   width: 500px;
+   background-color: #111B21;
+}
+@media (max-width: 800px) {
+   aside{
+      display: none;
+   }
+
+   main .chat-usuario,
+   main .chat-bot{
+      width: 50vw;
+   }
+}
+main{
+   width: 100vw;
+   background: url(/assets/img/bg-black-whatsapp.jpg);
+}
+aside header{
+   justify-content: space-between;
+}
+aside header .options,
+main header .options{
+   cursor: pointer;
+}
+aside header .options div,
+main header .options div{
+   margin: 5px 0;
+   width: 5px;
+   height: 5px;
+   border-radius: 100%;
+   background-color: gray;
+}
+aside .container-search{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #111B21;
+   height: 60px;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.363);
+}
+aside .container-search img{
+   position: absolute;
+   left: 50px;
+}
+aside .container-search input{
+   text-align: center;
+   padding: 10px;
+   border-radius: 10px;
+   width: 250px;
+   background-color: #202C33;
+}
+aside .contact{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   cursor: pointer;
+   padding: 20px 10px;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.363);
+}
+aside .contact:hover{
+   background-color: #202C33;
+}
+aside .contact .perfil{
+   cursor: pointer;
+}
+aside .contact .perfil,
+main .perfil {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+aside .contact .perfil #photo-bot,
+main .perfil #photo-bot{
+   background: url(../assets/img/foto-perfil-bot.jpg) center center no-repeat;
+   background-size: cover;
+}
+.container-chat{
+   display: flex;
+   background-color: cadetblue;
+   height: 82vh;
+   background: url(../assets/img/backgrounds/bg-black-whatsapp.jpg);
+}
+.container-chat p{
+   background-color: #202C33;
+   width: max-content;
+   min-width: 300px;
+   max-width: 500px;
+   height: auto;
+   padding: 10px;
+   border-radius: 10px;
+}
+.chat-bot,
+.chat-usuario{
+   padding: 10px;
+   width: 40vw;
+}
+.chat-bot{
+}
+.chat-usuario{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+.container-mensagem{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   padding: 10px;
+   height: 8vh;
+   background-color: #202C33;
+}
+.container-mensagem input{
+   width: 60vw;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: #2A3942;
+}
