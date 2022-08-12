@@ -120,10 +120,9 @@ main .perfil #photo-bot{
 }
 .chat-bot,
 .chat-usuario{
+   gap: 0.5rem;
    padding: 10px;
    width: 40vw;
-}
-.chat-bot{
 }
 .chat-usuario{
    display: flex;
@@ -143,4 +142,7 @@ main .perfil #photo-bot{
    padding: 10px;
    border-radius: 10px;
    background-color: #2A3942;
+}
+.container-mensagem #send-msg{
+   cursor: pointer;
 }
