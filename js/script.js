@@ -9,14 +9,24 @@ const createP = () => {
 }
 
 const sendMsg = (mensagem) =>{
-   const p = createP()
+   const p = createP();
    p.innerHTML = mensagem;
-   chatUsuario.appendChild(p)
+   chatUsuario.appendChild(p);
 }
 btnSendMsg.addEventListener('click', () =>{
    if (!inputMsg.value) return
-   sendMsg(inputMsg.value)
-   inputMsg.value = ''
+   sendMsg(inputMsg.value);
+   inputMsg.value = '';
 })
+const msgBot = (mensagem) => {
+   const p = createP();
+   p.innerText = mensagem;
+   chatBot.appendChild(p)
+}
+
+setTimeout(()=>{
+   msgBot('Olá, eu sou o bot Neves')
+},1000)
+
 
 

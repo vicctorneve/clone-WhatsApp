@@ -110,22 +110,22 @@ main .perfil #photo-bot{
    background: url(../assets/img/backgrounds/bg-black-whatsapp.jpg);
 }
 .container-chat p{
+   display: flex;
+   flex-direction: column;
    background-color: #202C33;
-   width: max-content;
-   min-width: 300px;
-   max-width: 500px;
-   height: auto;
+   width: 400px;
    padding: 10px;
    border-radius: 10px;
 }
 .chat-bot,
 .chat-usuario{
-   gap: 0.5rem;
    padding: 10px;
+   flex-direction: column;
+   gap: 0.5rem;
+   display: flex;
    width: 40vw;
 }
 .chat-usuario{
-   display: flex;
    flex-direction: column;
    align-items: flex-end;
 }
